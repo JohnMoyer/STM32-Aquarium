@@ -72,7 +72,6 @@ static void i2c_wait_flag(uint32_t flag) {
 // Generate START condition
 void i2c_start() {
     volatile uint32_t* i2c_cr1 = (uint32_t*)(I2C1_BASE + 0x00);
-    volatile uint32_t* i2c_sr1 = (uint32_t*)(I2C1_BASE + 0x14);
 
     *i2c_cr1 |= (1 << 8);        // START
     i2c_wait_flag(1 << 0);       // Wait for SB (start bit)
