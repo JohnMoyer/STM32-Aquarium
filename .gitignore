@@ -22,5 +22,3 @@ Drivers/STM32F1xx_HAL_Driver/
 # OS files
 .DS_Store
 Thumbs.db
-
-# Other
