@@ -6,15 +6,14 @@ build/
 *.d
 *.su
 *.elf
-*.hex
 *.bin
 *.map
 *.list
+*.cfg
+*.launch
 
 # IDE settings (optional - some people track these)
 .settings/
-.cproject
-.project
 
 # Generated files
 Drivers/CMSIS/
@@ -25,5 +24,3 @@ Drivers/STM32F1xx_HAL_Driver/
 Thumbs.db
 
 # Other
-*.launch
-.metadata/
