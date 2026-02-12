@@ -22,6 +22,9 @@ void initLed() {
     volatile uint32_t* crh = (uint32_t*) GPIOC_CRH;
     *crh &= ~(0b1111 << 20);  // Clear all 4 bits (CNF13[1:0] + MODE13[1:0])
     *crh |= (0b0010 << 20);   // Set MODE13=0b10 (2MHz), CNF13=0b00 (push-pull)
+
+	volatile uint32_t* odr = (uint32_t*) GPIOC_ODR;
+	*odr &= ~(0b1 << 13);
 }
 
 //PC13 is board led
