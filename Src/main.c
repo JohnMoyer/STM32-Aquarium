@@ -2,6 +2,7 @@
 #include <stdint.h>
 #include "i2c.h"
 #include "lcd.h"
+#include "delay.h"
 
 #define GPIOC_BASE 0x40011000
 #define GPIOC_ODR  (GPIOC_BASE + 0x0C)
@@ -32,7 +33,7 @@ int main(void)
 
     while(1) {
         toggleLed();
-        delayBusyMS(1000);
+        delayStkBusyUS(1000000);
     }
 }
 
