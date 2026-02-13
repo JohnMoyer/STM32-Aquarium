@@ -13,17 +13,17 @@
 #define LCD_ADDR 0x27
 
 // PCF8574 pin mapping
-#define LCD_BACKLIGHT 0x08
-#define LCD_EN 0x04  // Enable bit
-#define LCD_RW 0x02  // Read/Write bit
-#define LCD_RS 0x01  // Register select bit
+#define LCD_BACKLIGHT 		0x08
+#define LCD_EN 				0x04  // Enable bit
+#define LCD_RW 				0x02  // Read/Write bit
+#define LCD_RS 				0x01  // Register select bit
 
 // Commands
-#define LCD_CLEAR 0x01
-#define LCD_HOME 0x02
-#define LCD_ENTRY_MODE 0x04
+#define LCD_CLEAR 			0x01
+#define LCD_HOME 			0x02
+#define LCD_ENTRY_MODE 		0x04
 #define LCD_DISPLAY_CONTROL 0x08
-#define LCD_FUNCTION_SET 0x20
+#define LCD_FUNCTION_SET 	0x20
 
 extern void delayBusyMS(uint32_t N);
 

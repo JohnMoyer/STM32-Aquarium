@@ -10,12 +10,12 @@
 
 #include <stdint.h>
 
-#define GPIOB_BASE 0x40010C00
-#define GPIOC_BASE 0x40011000
+#define GPIOB_BASE 	0x40010C00
+#define GPIOC_BASE	0x40011000
 
-#define RCC_BASE 0x40021000
+#define RCC_BASE	0x40021000
 
-#define STK_BASE 0xE000E010
+#define STK_BASE 	0xE000E010
 
 #define RCC_APB2ENR 0x40021018
 

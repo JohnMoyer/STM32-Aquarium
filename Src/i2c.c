@@ -8,21 +8,21 @@
 #include <stdint.h>
 #include "i2c.h"
 
-#define I2C1_BASE 0x40005400
-#define RCC_BASE 0x40021000
-#define GPIOB_BASE 0x40010C00
+#define I2C1_BASE 		0x40005400
+#define RCC_BASE 		0x40021000
+#define GPIOB_BASE 		0x40010C00
 
-#define GPIOB_CRL (GPIOB_BASE + 0x00)
-#define RCC_APB1ENR (RCC_BASE + 0x1C)
-#define RCC_APB2ENR (RCC_BASE + 0x18)
+#define GPIOB_CRL 		(GPIOB_BASE + 0x00)
+#define RCC_APB1ENR 	(RCC_BASE + 0x1C)
+#define RCC_APB2ENR 	(RCC_BASE + 0x18)
 
-#define I2C_CR1 (I2C1_BASE + 0x00)
-#define I2C_CR2 (I2C1_BASE + 0x04)
-#define I2C_CCR (I2C1_BASE + 0x1C)
-#define I2C_TRISE (I2C1_BASE + 0x20)
-#define I2C_DR (I2C1_BASE + 0x10)
-#define I2C_SR1 (I2C1_BASE + 0x14)
-#define I2C_SR2 (I2C1_BASE + 0x18)
+#define I2C_CR1 		(I2C1_BASE + 0x00)
+#define I2C_CR2 		(I2C1_BASE + 0x04)
+#define I2C_CCR 		(I2C1_BASE + 0x1C)
+#define I2C_TRISE 		(I2C1_BASE + 0x20)
+#define I2C_DR 			(I2C1_BASE + 0x10)
+#define I2C_SR1 		(I2C1_BASE + 0x14)
+#define I2C_SR2			(I2C1_BASE + 0x18)
 
 extern void toggleLed(void);
 extern void delayBusyMS(uint32_t N);
