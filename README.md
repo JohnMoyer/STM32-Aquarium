@@ -87,7 +87,6 @@ Based on datasheet specifications:
 - SCL frequency: 100kHz (10μs period)
 - Setup time: 250ns minimum
 - Hold time: 0ns minimum (extended in hardware)
-```
 
 ---
 
@@ -107,7 +106,8 @@ Based on datasheet specifications:
 - Feeding schedule automation
 
 ## Resources
-- [STM32F103 Reference Manual](link)
-- [DS18B20 Datasheet](link)
-- [I2C Protocol Specification](link)
+- [STM32F103 Reference Manual](https://www.st.com/resource/en/reference_manual/rm0008-stm32f101xx-stm32f102xx-stm32f103xx-stm32f105xx-and-stm32f107xx-advanced-armbased-32bit-mcus-stmicroelectronics.pdf)
+- [DS18B20 Datasheet](https://www.digikey.com/en/htmldatasheets/production/1667/0/0/1/ds18b20-par)
+- [DS3231 Datasheet](https://www.analog.com/media/en/technical-documentation/data-sheets/ds3231.pdf)
+- [I2C Protocol Specification](http://wiki.sunfounder.cc/images/1/18/PCF8574T_datasheet.pdf)
 ```
